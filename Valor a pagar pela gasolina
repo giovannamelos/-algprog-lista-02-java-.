@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Ex4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double precoLitro, litros, total;
+
+        System.out.print("Digite o preço do litro da gasolina: ");
+        precoLitro = sc.nextDouble();
+
+        System.out.print("Quantos litros foram vendidos: ");
+        litros = sc.nextDouble();
+
+        total = precoLitro * litros;
+
+        System.out.println("Valor a pagar: R$ " + total);
+
+        sc.close();
+    }
+}
