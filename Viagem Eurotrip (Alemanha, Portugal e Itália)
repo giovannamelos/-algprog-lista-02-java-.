@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class Ex5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double precoAlemanha, precoPortugal, precoItalia;
+        int pessoasAlemanha, pessoasPortugal, pessoasItalia;
+        double totalAlemanha, totalPortugal, totalItalia, totalGeral;
+
+        // Alemanha
+        System.out.print("Digite o preço da viagem para Alemanha: ");
+        precoAlemanha = sc.nextDouble();
+
+        System.out.print("Quantidade de pessoas para Alemanha: ");
+        pessoasAlemanha = sc.nextInt();
+
+        // Portugal
+        System.out.print("Digite o preço da viagem para Portugal: ");
+        precoPortugal = sc.nextDouble();
+
+        System.out.print("Quantidade de pessoas para Portugal: ");
+        pessoasPortugal = sc.nextInt();
+
+        // Itália
+        System.out.print("Digite o preço da viagem para Itália: ");
+        precoItalia = sc.nextDouble();
+
+        System.out.print("Quantidade de pessoas para Itália: ");
+        pessoasItalia = sc.nextInt();
+
+        // Cálculos
+        totalAlemanha = precoAlemanha * pessoasAlemanha;
+        totalPortugal = precoPortugal * pessoasPortugal;
+        totalItalia = precoItalia * pessoasItalia;
+
+        totalGeral = totalAlemanha + totalPortugal + totalItalia;
+
+        // Resultado
+        System.out.println("Total Alemanha: R$ " + totalAlemanha);
+        System.out.println("Total Portugal: R$ " + totalPortugal);
+        System.out.println("Total Itália: R$ " + totalItalia);
+        System.out.println("Valor total da Eurotrip: R$ " + totalGeral);
+
+        sc.close();
+    }
+}
